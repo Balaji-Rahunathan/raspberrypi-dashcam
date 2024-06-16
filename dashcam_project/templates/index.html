@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dashcam Dashboard</title>
+  </head>
+  <body>
+    <h1>Dashcam Dashboard</h1>
+    <h2>System Info</h2>
+    <ul>
+      <li>Temperature: {{ system_info['temperature'] }} °C</li>
+      <li>Disk Usage: {{ system_info['disk_usage'] }} %</li>
+      <li>Video Count: {{ system_info['video_count'] }}</li>
+    </ul>
+    <h2>Settings</h2>
+    <form method="post" action="/settings">
+      <label for="video_length">Video Length (seconds):</label>
+      <input type="number" id="video_length" name="video_length" value="{{ video_length }}">
+      <button type="submit">Save</button>
+    </form>
+    <h2>Recorded Videos</h2>
+    <ul>
+      {% for video in videos %}
+      <li><a href="/videos/{{ video }}">{{ video }}</a></li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

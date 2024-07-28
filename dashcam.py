@@ -13,11 +13,11 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %
 
 # Constants
 VIDEO_LENGTH = 60  # Default length in seconds, adjustable via dashboard
-VIDEO_PATH = '/home/thunder/videos'  # Change path accordingly
+VIDEO_PATH = '/home/dashcam/videos'  # Change path accordingly
 THRESHOLD = 80  # Percentage for storage management
 HOTSPOT_INTERFACE = 'wlan0'
-HOTSPOT_SSID = 'PiHotspot'
-HOTSPOT_PASSWORD = 'raspberry'
+HOTSPOT_SSID = 'Dashcam'
+HOTSPOT_PASSWORD = 'dash@123'
 APP_PORT = 5000
 
 # Create directory if not exists

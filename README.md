@@ -39,7 +39,7 @@ sudo apt install python3-flask python3-psutil
 ### 3. Clone the Repository
 
 ```bash
-git clone https://github.com/Balaji-rahunathan/dashcam_project.git
+git clone https://github.com/Balaji-Rahunathan/raspberrypi-dashcam.git
 ```
 
 ### 4. Modify Configuration (Optional)
